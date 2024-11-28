@@ -7,6 +7,7 @@
   right: calc(2 * var(--base-x));
   bottom: calc(5 * var(--base-y));
   border-radius: 1.5rem;
+  box-sizing: content-box;
   background: #ffffff;
 }
 
@@ -74,7 +75,6 @@
 
   .message {
     display: inline-block;
-    border: 1px solid black;
     font-size: 1.5rem;
     padding: calc(1.5 * var(--base-y)) calc(1.7 * var(--base-x));
     color: white;
@@ -138,4 +138,10 @@
 
 .sendIcon:hover {
   transform: scale(1.05);
+}
+
+@media (max-width: 1025px) {
+  .container {
+    bottom: calc(2 * var(--base-y));
+  }
 }
